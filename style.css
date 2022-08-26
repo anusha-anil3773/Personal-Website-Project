@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+hr  {
+    background-color: #464646;
+    height: 1px;
+    border: none;
+
+}
+#navbar{
+    background-color: darkslategrey;
+    height: 75px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    
+}
+.menu-bars{
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+
+
+#nav-menu{
+    background-color: darkslategrey;
+    width: 230px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    
+   
+}
+#nav-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+.nav-text{
+    display: flex;
+    justify-content:first baseline;
+    list-style: none;
+    height: 50px;
+    padding: 1rem;
+    
+    float: left;
+    display: block;
+    
+
+}
+.nav-text a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+   
+}
+.nav-text a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-text:hover{
+    background-color: rgba(144,144,144,0.219);
+    cursor: pointer;
+    
+}
+.nav-menu-items{
+    width: 100%;
+
+}
+.nav-icon{
+    padding-right: 1rem;
+    color: #fff;
+    justify-content: center;
+
+    
+}
+
+
+
+#nav-toggle{
+    background-color: #212121;
+    width: 100%;
+    height: 100px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    white-space: nowrap;
+   
+    
+
+
+}
+#navbar-toggle h2{
+    color: #fff;
+    font-family: sans-serif;
+}
+#navbar-toggle a{
+    text-decoration: none;
+}
+.fa-bars{
+    color: #fff;
+   
+}
+.nav-section{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    
+}
+.home-image{
+    width: 100%;
+    margin: 0;
+  
+    
+  
+  
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about{
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 50px;
+
+}
+.aboutsection{
+    background-color:#fff3fb;
+}
+.bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+  }
+ 
