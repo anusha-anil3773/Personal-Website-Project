@@ -131,12 +131,13 @@ header{
     width: 80%;
     padding: 10px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .bg-text h6 i{
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .bg-text h2 i{
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 /* home page.............................. */
 .home-image{
@@ -166,6 +167,7 @@ header{
 .about h1{
   
     justify-content: center;
+    color: darkslategrey;
     padding-top: 30px;
     margin-left: 43%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -180,35 +182,65 @@ header{
     margin-top: 15%;
     padding-right: 15px;
     padding-bottom: 10%;
-    
+    color: darkslategrey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* skills */
-.skill{
-    background-color: #f5f2f4;
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.bg-skill{
+  background-color: #f5f2f4;
+  margin-top: 5%;
+  height: 430px;
 }
-.skill-text{
-    padding-left: 45%;
-    padding-top: 30px;
+.container h1{
+  color: darkslategrey;
+  padding-left: 43%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+ 
 }
-.skill-first{
-    padding-left: 50px;
+.basicskill{
+  border: 2px solid darkslategrey;
+  float:left;
+  width: 40%;
+  background-color: darkslategrey;
+  padding: 40px;
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 10%;
+
 }
-.skill-body1{
-    padding-left: 15%;
+.webskill{
+  border: 2px solid darkslategrey;
+  float:left;
+  width: 40%;
+  background-color: darkslategrey;
+  padding: 40px;
+  color: white;
+ 
+  margin-left: 50px;
+
+
+
 }
-.skill-body2{
-    padding-left: 30%;
-    padding-top: 50px;
+
+
+#cardtitle{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#cardtext{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* education ...................................*/
 .education h1{
   
     justify-content: center;
-    padding-left: 45%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslategrey;
+    padding-left: 43%;
+   
+   
 }
 .time-line-education{
     background-color: #f5f2f4;
@@ -234,13 +266,13 @@ header{
       margin:100px 0;
       padding:0;
       display:inline-block;
+      margin-right: 50%;
+   
   
   }
   .history-tl-container ul.tl li{
       list-style: none;
-   
-    
-      margin-left:50px;
+      width:20em;
       min-height:50px;
       /*background: rgba(255,255,0,0.1);*/
       border-left:1px dashed darkslategrey;
@@ -288,6 +320,7 @@ header{
   }
   .contact-text h1{
     padding-top: 30px;
+    color: darkslategrey;
     padding-left: 43%;
     padding-bottom: 30px;
   }

@@ -34,17 +34,17 @@
             </div>
             <hr/>
             <div class="nav-section">
-                <li class="nav-text"><a href="#"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li class="nav-text"><a href="#home-section"><i class="fa-solid fa-house-user"></i> Home</a></li>
                 <li class="nav-text"><a href="#about-section"><i class="fa-solid fa-user"></i> About Me</a></li>
               
                
             </div>
             <hr/>
             <div class="nav-section">
-                <li class="nav-text"><a href="#"><i class="fa-solid fa-laptop-code"></i> Skill</a></li>
-                <li class="nav-text"><a href="#"><i class="fa-solid fa-school"></i> Education</a></li>
+                <li class="nav-text"><a href="#skill-section"><i class="fa-solid fa-laptop-code"></i> Skill</a></li>
+                <li class="nav-text"><a href="#education-section"><i class="fa-solid fa-school"></i> Education</a></li>
 
-                <li class="nav-text"><a href="#"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
+                <li class="nav-text"><a href="#contactme-sectn"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
                
 
             </div>
@@ -56,17 +56,17 @@
    
     <script src='javascript.js'></script>
     <!-- home page text -->
-    <div class="home-image" >
+    <div class="home-image" id="home-section">
         <img src="images/home.jpg" alt="homeimage" width="100%" >
     </div>
     <div class="bg-text">
-        <h2><i>ANUSHA ANIL</i></h2>
-        <h6><i>Full Stack Developer</i></h6>
+        <h2>ANUSHA ANIL</h2>
+        <h6>Full Stack Developer</h6>
     </div>
    
     <!-- header ends..... -->
     <!-- about starts.... -->
-    <section class="aboutsection" id="home-section">
+    <section class="aboutsection" id="about-section">
        <div class="about">
             <h1><strong>ABOUT ME</strong></h1>
             
@@ -80,55 +80,28 @@
     </section>
      <!--about ends --> 
      <!-- skill...... -->
-     <section class="skill" id="skill-section">
-        <div class="skill-text">
-            <h1>SKILLS</h1>
-        </div>
-        <section class="skill-first">
-        <div class="skill-body1">
-            <i class="fa-brands fa-python"></i>
-            <div>
-            <h5>Python</h5>
-            </div>
-        </div>
-        <div class="skill-body2">
-            <i class="fa-solid fa-c"></i>
-            <div>
-            <h5>C++</h5>
-            </div>
-        </div>
-        <div class="skill-body3">
-            <i class="fa-brands fa-java"></i>
-            <div>
-            <h5>Java</h5>
-            </div>
-        </div>
-        </section>
-        <div class="skill-body1">
-            <i class="fa-brands fa-js"></i>
-            <div>
-            <h5>JavaScript</h5>
-            </div>
-        </div>
-        <div class="skill-body1">
-            <i class="fa-brands fa-html5"></i>
-            <div>
-            <h5>HTML5</h5>
-            </div>
-        </div>
-        <div class="skill-body1">
-            <i class="fa-brands fa-css3-alt"></i>
-            <div>
-            <h5>CSS3</h5>
-            </div>
-        </div>
-        
+     <section class="bg-skill" id="skill-section">
+      <div class="container">
+        <h1 ><strong>SKILLS</strong></h1>
+      </div>
+      <div class="basicskill">
+          <i class="fa-brands fa-java display-1 text-light"></i>
+              <h4 class="card-title">Basics</h4>
+              <p class="card-text">C,Java,Python</p>
+               
+      </div>
+      <div class="webskill">
+            <i class="fa-brands fa-html5 display-1 text-light"></i>
+             <h4 class="card-title">web Design</h4>
+             <p class="card-text">Html,CSS,jquery,Javascript</p>
+               
+      </div>
     </section>
      <!-- skill ends..... -->
      <!-- education starts -->
-     <section class="time-line-education">
+     <section class="time-line-education" id="education-section">
         <div class="education" id="edtn">
-            <h1>EDUCATION</h1>
+            <h1><strong>EDUCATION</strong></h1>
         </div>
      <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
      <div class="history-tl-container">
@@ -163,9 +136,9 @@
      <!-- education ends....... -->
 
      <!-- contact me ....... -->
-  <section class="contact-section">
+  <section class="contact-section" id="contactme-sectn">
     <div class="contact-text" >
-      <h1>CONTACT ME</h1>
+      <h1><strong>CONTACT ME</strong> </h1>
     </div>
  <form class="cf">
    <div class="contact-first">
@@ -184,7 +157,7 @@
  </form>
  </section>
  <!-- footer................... -->
- <footer class="bg-footer">
+ <footer class="bg-footer" id="footer-section">
   <div class="footer-button" id="footer-section">
     <a class="btn-instagram" href="https://www.instagram.com/_a.n.u_s.h.a__/!" role="button" data-mdb-ripple-color="dark">
       <i class="fab fa-instagram"></i></a>
