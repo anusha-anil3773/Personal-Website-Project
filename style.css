@@ -13,6 +13,8 @@ hr  {
     border: none;
 
 }
+/* navbar............................... */
+
 #navbar{
     background-color: darkslategrey;
     height: 75px;
@@ -23,6 +25,7 @@ hr  {
     width: 100%;
     overflow: auto;
     
+    
 }
 .menu-bars{
     margin-left: 3rem;
@@ -30,9 +33,11 @@ hr  {
     color: #fff;
 
 }
-
-
-
+header{
+    position:fixed;
+    width: 100%;
+    z-index:999;
+}
 #nav-menu{
     background-color: darkslategrey;
     width: 230px;
@@ -43,8 +48,7 @@ hr  {
     top: 0;
     left: -100%;
     transition: 850ms;
-    
-   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #nav-menu.active{
     left: 0;
@@ -56,18 +60,15 @@ hr  {
     list-style: none;
     height: 50px;
     padding: 1rem;
-    
     float: left;
     display: block;
-    
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav-text a{
     text-decoration: none;
     color: #f5f5f5;
     font-size: 1.2rem;
     margin-left: 1rem;
-   
 }
 .nav-text a:hover{
     text-decoration: none;
@@ -86,12 +87,7 @@ hr  {
     padding-right: 1rem;
     color: #fff;
     justify-content: center;
-
-    
 }
-
-
-
 #nav-toggle{
     background-color: #212121;
     width: 100%;
@@ -101,14 +97,10 @@ hr  {
     align-items: center;
     float:left;
     white-space: nowrap;
-   
-    
-
-
 }
 #navbar-toggle h2{
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #navbar-toggle a{
     text-decoration: none;
@@ -125,43 +117,274 @@ hr  {
     color: #fff;
     
 }
-.home-image{
-    width: 100%;
-    margin: 0;
-  
-    
-  
-  
-  
-  height: 100%; 
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.about{
-    justify-content: center;
-    margin-left: 45%;
-    margin-top: 50px;
-
-}
-.aboutsection{
-    background-color:#fff3fb;
-}
 .bg-text {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4); 
     color: white;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
+    font-family: cursive;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 60%;
+    width: 80%;
     padding: 10px;
     text-align: center;
   }
+  .bg-text h6 i{
+    font-family: cursive;
+  }
+  .bg-text h2 i{
+    font-family: cursive;
+  }
+/* home page.............................. */
+.home-image{
+    width: 100%;
+    margin: 0;
+     height: 100%; 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/* about................................... */
+
+
+.aboutsection{
+    background-color:#f5f2f4;
+    margin-top: 5%;
+}
+
+.about img{
+    margin-left: 5%;
+    width: 20%;
+    position: absolute;
+    top: 150%;
+    
+    
+}
+.about h1{
+  
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 43%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  
+    
+}
+.about p{
+   
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: justify;
+    margin-top: 15%;
+    padding-right: 15px;
+    padding-bottom: 10%;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* skills */
+.skill{
+    background-color: #f5f2f4;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skill-text{
+    padding-left: 45%;
+    padding-top: 30px;
+}
+.skill-first{
+    padding-left: 50px;
+}
+.skill-body1{
+    padding-left: 15%;
+}
+.skill-body2{
+    padding-left: 30%;
+    padding-top: 50px;
+}
+
+/* education ...................................*/
+.education h1{
+  
+    justify-content: center;
+    padding-left: 45%;
+}
+.time-line-education{
+    background-color: #f5f2f4;
+    margin-top: 5%;
+    padding-top: 30px;
+  
+    justify-content: center;
+   
+}
+.history-tl-container{
+    padding-left: 45%;
+}
+
+  .history-tl-container{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:50%;
+    margin:auto;
+    display:block;
+    position:relative;
+  }
+  .history-tl-container ul.tl{
+      margin:100px 0;
+      padding:0;
+      display:inline-block;
+  
+  }
+  .history-tl-container ul.tl li{
+      list-style: none;
+   
+    
+      margin-left:50px;
+      min-height:50px;
+      /*background: rgba(255,255,0,0.1);*/
+      border-left:1px dashed darkslategrey;
+      padding:0 0 50px 30px;
+      position:relative;
+  }
+  .history-tl-container ul.tl li:last-child{ border-left:0;}
+  .history-tl-container ul.tl li::before{
+      position: absolute;
+      
+      left: -18px;
+      top: -5px;
+      content: " ";
+      border: 8px solid rgba(255, 255, 255, 0.74);
+      border-radius: 500%;
+      background:darkslategrey;
+      height: 20px;
+      width: 20px;
+      transition: all 500ms ease-in-out;
+  
+  }
+  .history-tl-container ul.tl li:hover::before{
+      border-color: darkslategrey;
+      transition: all 1000ms ease-in-out;
+  }
+  
+  ul.tl li .item-detail{
+      color:rgba(0,0,0,0.5);
+      font-size:14px;
+      
+  }
+  ul.tl li .timestamp{
+   
+      color: #8D8D8D;
+      position: absolute;
+      width:90px;
+      left: -50%;
+      padding-left: 10px;
+      font-size: 14px;
+  }
+  /* contact */
+  .contact-section{
+    background-color: #f5f2f4 ;
+    margin-top: 5%;
+  }
+  .contact-text h1{
+    padding-top: 30px;
+    padding-left: 43%;
+    padding-bottom: 30px;
+  }
+  
+  .contact-message{
+    margin: 50px;
+    border: 1px solid red;
+
+  }
+ #input-phone{
+    width: 45%;
+    height: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+ }
+  
+  #input-name{
+    width: 45%;
+    height: 50px;
+    padding-left: 50px;
+    margin-right: 30px;
+    margin-left: 50px;
+   
+    
+  }
+  #input-email{
+    width: 45%;
+    height: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    
+  }
+  #input-message{
+    width: 93%;
+    height: 50%;
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+  
+
+  }
+  #input-place{
+    width: 45%;
+    margin-left: 50px;
+    height: 50px;
+    padding-left: 50px;
+    margin-right: 30px;
+
+  }
+  #input-submit{
+    color: white;
+    margin-top: 40px;
+    margin-left: 42.5%;
+    margin-bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 20%;
+    border-color: darkslategrey;
+    border-radius: 5px;
+    background-color: darkslategrey;
+  }
+  /* footer.......... */
+
+  .btn-instagram{
+    color: white;
+    padding-left: 46%;
+  }
+  .btn-linkedin{
+    color: white;
+    padding-left: 30px;
+  }
+  .btn-github{
+    color: white;
+    padding-left: 30px;
+    
+  }
+  .btn-twitter{
+    color: white;
+    padding-left: 30px;
+  }
+  .footer-button{
+    padding-top: 20px;
+    
+  }
+  .footer-text h6{
+    padding-left: 49%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    justify-content: center;
+    color: white;
+    padding-top: 13px;
+}
+  .bg-footer{
+    background-color:darkslategrey ;
+    height: 6em;    
+  }
